@@ -2,7 +2,7 @@
 
 In general, issues are sorted in alphabetical order, with non-working CSS classes placed first.
 <br /><hr />
-**Issue:** `.hidden-desktop`, `.visible-tablet`, `.visible-phone` do not work<br />
+**Issue:** `.hidden-desktop`, `.visible-tablet`, `.visible-phone` do not work.<br />
 **Version:** IE7 and below<br />
 **Url:** https://github.com/twitter/bootstrap/issues/3201<br />
 **Cause:** IE7 does not support `inherit` property in CSS<br />
@@ -40,7 +40,7 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 
 
 <br /><hr />
-**Issue:** `.span*` do not work<br />
+**Issue:** `.span*` do not work.<br />
 **Version:** IE7 and below<br />
 **Url:** https://github.com/twitter/bootstrap/issues/4329<br />
 **Cause:** IE7 sees a HTML comment as a first-child or at least doesn't function when a HTML comment is in front of it.<br />
@@ -56,11 +56,11 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 
 
 <br /><hr />
-**Issue:** Dropdown items in `.navbar` do not show up in tablet/phone mode<br />
+**Issue:** Dropdown items in `.navbar` do not show up in tablet/phone mode.<br />
 **Version:** IE7 and below<br />
 **Url:** http://brenelz.com/blog/squish-the-internet-explorer-z-index-bug/<br />
 **Url:** http://dustinbrewer.com/how-to-fix-z-index-stacking-in-internet-explorer/<br />
-**Cause:** IE z-index stacking bug<br />
+**Cause:** IE z-index stacking bug.<br />
 **Workaround:**<br />
 Set a high z-index on `.navbar` in your custom CSS
 ```
@@ -69,21 +69,21 @@ Set a high z-index on `.navbar` in your custom CSS
 
 
 <br /><hr />
-**Issue:** Dropdown toggle out of alignment<br />
+**Issue:** Dropdown toggle out of alignment.<br />
 **Version:** IE6<br />
 **Workaround:**<br />
-Add the following in your custom CSS
+Add the following in your custom CSS.
 ```
 .dropdown .dropdown-toggle { _top: 0; }
 ```
 
 
 <br /><hr />
-**Issue:** Slideshow image for jQuery AD Gallery plugin does not show<br />
+**Issue:** Slideshow image for jQuery AD Gallery plugin does not show.<br />
 **Version:** IE9 and below<br />
 **Url:** http://stackoverflow.com/questions/13179679/how-to-override-css-img-properties<br />
 **Url:** http://msdn.microsoft.com/en-us/library/ms537512(VS.85).aspx#dlrevealed<br />
-**Cause:** `width:auto\9` and `height:auto` in `img` rule in Bootstrap CSS<br />
+**Cause:** `width:auto\9` and `height:auto` in `img` rule in Bootstrap CSS.<br />
 **Workaround:**<br />
 The CSS workaround mentioned in the _Stackoverflow_ answer will not work for IE7 as it does not support the `inherit` property.<br />
 To support IE7 onwards, remove the conflicting CSS rules from the Bootstrap CSS, save as another file.<br />
