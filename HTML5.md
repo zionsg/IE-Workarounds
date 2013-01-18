@@ -1,6 +1,7 @@
 ### IE workarounds for HTML5
 
-<hr />
+In general, issues are sorted according to the HTML5 feature in alphabetical order.
+<br /><hr />
 **Issue:** `placeholder` attribute for `input` and `textarea` elements not supported<br />
 **Version:** IE9 and below<br />
 **Url:** http://mathiasbynens.be/demo/placeholder<br />
