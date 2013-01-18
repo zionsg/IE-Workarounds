@@ -83,7 +83,7 @@ Add the following in your custom CSS
 **Version:** IE9 and below<br />
 **Url:** http://stackoverflow.com/questions/13179679/how-to-override-css-img-properties<br />
 **Url:** http://msdn.microsoft.com/en-us/library/ms537512(VS.85).aspx#dlrevealed<br />
-**Cause:** "width:auto\9" and "height:auto" in "img" rule in Bootstrap CSS<br />
+**Cause:** `width:auto\9` and `height:auto` in `img` rule in Bootstrap CSS<br />
 **Workaround:**<br />
 The CSS workaround mentioned in the _Stackoverflow_ answer will not work for IE7 as it does not support the `inherit` property.<br />
 To support IE7 onwards, remove the conflicting CSS rules from the Bootstrap CSS, save as another file.<br />
