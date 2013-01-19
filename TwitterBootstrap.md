@@ -10,12 +10,15 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 ```
 <!--[if lte IE 7]>
   <style>
-    .hidden-desktop-ie7 { *display: inline !important; zoom: 1; }
-    .visible-tablet-ie7 { *display: inline !important; zoom: 1; }
-    .visible-phone-ie7 { *display: inline !important; zoom: 1; }
+    .hidden-desktop-ie7,
+    .visible-tablet-ie7,
+    .visible-phone-ie7 {
+      *display: inline !important; 
+      zoom: 1; 
+    }
   </style>
   <script>
-    // IE7 hack for Twitter Bootstrap responsive utility classes as IE7 does not support 'inherit' in CSS
+    // IE7 fix for Twitter Bootstrap responsive utility classes as IE7 does not support 'inherit' in CSS
     var layoutInheritScript = function() {
         $(window).load(function() { ie7InheritFix(); });
         $(window).resize(function() { ie7InheritFix(); });
