@@ -19,7 +19,7 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
   </style>
   <script>
     // IE7 fix for Twitter Bootstrap responsive utility classes as IE7 does not support 'inherit' in CSS
-    var layoutInheritScript = function() {
+    var inheritFixScript = function() {
         $(window).load(function() { ie7InheritFix(); });
         $(window).resize(function() { ie7InheritFix(); });
 
