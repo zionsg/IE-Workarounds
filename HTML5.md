@@ -10,7 +10,7 @@ In general, issues are sorted according to the HTML5 feature in alphabetical ord
 **Workaround:**<br />
 Download HTML5 shim or use Google CDN<br />
 ```
-<!--[if lte IE 9]>
+<!--[if lte IE 8]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 ```    
