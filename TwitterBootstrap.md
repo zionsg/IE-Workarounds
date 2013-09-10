@@ -13,8 +13,8 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
     .hidden-desktop-ie7,
     .visible-tablet-ie7,
     .visible-phone-ie7 {
-      *display: inline !important; 
-      zoom: 1; 
+      *display: inline !important;
+      zoom: 1;
     }
   </style>
   <script>
@@ -93,6 +93,8 @@ To support IE7 onwards, remove the conflicting CSS rules from the Bootstrap CSS,
 Load the Bootstrap CSS for non-IE browsers using downlevel-revealed conditional comments and
 load the modified file with downlevel-hidden conditional comments.
 ```
-<![if !IE]><link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><![endif]>
+<!-- Note the subtle syntax differences in the !IE conditional at the beginning and at the end. -->
+
+<!--[if !IE]><!--><link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><!--[endif]-->
 <!--[if IE]><link href="bootstrap-ie-workaround.min.css" media="screen" rel="stylesheet" type="text/css"><![endif]-->
 ```
