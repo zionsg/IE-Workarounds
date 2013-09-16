@@ -12,14 +12,16 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 <!--[if lte IE 8]><html class="ie" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="non-ie" lang="en"><!--<![endif]-->
 
-<style>
-  .ie .hidden-desktop,
-  .ie .visible-tablet,
-  .ie .visible-phone {
-    *display: inline !important;
-    zoom: 1;
-  }
-</style>
+<!--[if lte IE 7]>
+  <style>
+    .ie .hidden-desktop,
+    .ie .visible-tablet,
+    .ie .visible-phone {
+      *display: inline !important;
+      zoom: 1;
+    }
+  </style>
+<![endif]-->
 ```
 **Workaround (using jQuery):**
 ```
