@@ -6,7 +6,22 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 **Version:** IE7 and below<br />
 **Url:** https://github.com/twitter/bootstrap/issues/3201<br />
 **Cause:** IE7 does not support `inherit` property in CSS<br />
-**Workaround:**
+**Workaround (using CSS only):**
+```
+<!DOCTYPE html>
+<!--[if lte IE 8]><html class="ie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="non-ie" lang="en"><!--<![endif]-->
+
+<style>
+  .ie .hidden-desktop,
+  .ie .visible-tablet,
+  .ie .visible-phone {
+    *display: inline !important;
+    zoom: 1;
+  }
+</style>
+```
+**Workaround (using jQuery):**
 ```
 <!--[if lte IE 7]>
   <style>
@@ -95,6 +110,6 @@ load the modified file with downlevel-hidden conditional comments.
 ```
 <!-- Note the subtle syntax differences in the !IE conditional at the beginning and at the end. -->
 
-<!--[if !IE]><!--><link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><!--[endif]-->
+<!--[if !IE]><!--><link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
 <!--[if IE]><link href="bootstrap-ie-workaround.min.css" media="screen" rel="stylesheet" type="text/css"><![endif]-->
 ```
