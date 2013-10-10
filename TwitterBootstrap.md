@@ -1,5 +1,7 @@
 ### IE workarounds for Twitter Bootstrap (as of v2.2.2)
 
+Website: http://getbootstrap.com
+
 In general, issues are sorted in alphabetical order, with non-working CSS classes placed first.
 <br /><hr />
 **Issue:** `.hidden-desktop`, `.visible-tablet`, `.visible-phone` do not work.<br />
