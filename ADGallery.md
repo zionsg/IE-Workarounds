@@ -1,6 +1,10 @@
 ### IE workarounds for AD Gallery jQuery plugin (as of v1.2.7)
 
 Website: http://coffeescripter.com/code/ad-gallery
+<hr />
+
+**Issue:** Slideshow image does not show in IE9 and below when used with Twitter Bootstrap.<br />
+**Workaround:** Refer to workaround in https://github.com/zionsg/IE-Workarounds/blob/master/TwitterBootstrap.md
 <br /><hr />
 **Issue:** Slideshow image does not show in IE10.<br />
 **Version:** IE10<br />
