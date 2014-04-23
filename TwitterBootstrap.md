@@ -1,4 +1,4 @@
-### IE workarounds for Twitter Bootstrap (as of v2.2.2)
+### IE workarounds for Twitter Bootstrap (as of v2.3.2)
 
 Website: http://getbootstrap.com
 
@@ -8,7 +8,7 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 **Version:** IE7 and below<br />
 **Url:** https://github.com/twitter/bootstrap/issues/3201<br />
 **Cause:** IE7 does not support `inherit` property in CSS<br />
-**Workaround (using CSS only):**
+**Workaround (using CSS only - does not always work):**
 ```
 <!DOCTYPE html>
 <!--[if lte IE 8]><html class="ie" lang="en"><![endif]-->
