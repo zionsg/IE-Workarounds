@@ -1,11 +1,10 @@
-
 ### IE workarounds for CSS
 
 In general, issues are sorted according to the CSS property in alphabetical order.
 <br /><hr />
 **Issue:** Unable to show vertical scrollbar always using overflow-y:scroll.<br />
 **Version:** IE10<br />
-**Url:** http://msdn.microsoft.com/en-us/library/ie/hh771902(v=vs.85).aspxbr />
+**Url:** http://msdn.microsoft.com/en-us/library/ie/hh771902(v=vs.85).aspx<br />
 **Cause:** Vertical scrollbar appears as overlay<br />
 **Workaround:**<br />
 ```
