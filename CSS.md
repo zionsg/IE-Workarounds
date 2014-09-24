@@ -41,13 +41,11 @@ Use Respond.js (see Url)
 }
 ```
 <br /><hr />
-**Issue:** Gaps between `<div>`s not due to margin or padding.<br />
+**Issue:** Gaps between div blocks not due to margin or padding.<br />
 **Version:** All versions<br />
 **Url:** https://wordpress.org/support/topic/gap-between-div-image-slices<br />
 **Cause:** Overflow<br />
 **Workaround:**<br />
 ```
-div {
-  overflow: hidden;
-}
+div { overflow: hidden; }
 ```
