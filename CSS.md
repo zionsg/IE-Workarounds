@@ -17,9 +17,11 @@ html {
 **Issue:** CSS3 Media Queries not supported.<br />
 **Version:** IE8 and below<br />
 **Url:** https://github.com/scottjehl/Respond<br />
+**Url:** http://stackoverflow.com/questions/15127040/respond-js-not-working-in-ie-8
 **Cause:** No support<br />
 **Workaround:**<br />
 Use Respond.js (see Url)
+Note that respond.js may not work in IE8 if CSS or jQuery are loaded from CDN
 ```
 <!--[if lte IE 8]>
   <script src="respond.min.js"></script>
