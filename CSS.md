@@ -20,8 +20,8 @@ html {
 **Url:** http://stackoverflow.com/questions/15127040/respond-js-not-working-in-ie-8
 **Cause:** No support<br />
 **Workaround:**<br />
-Use Respond.js (see Url)
-Note that respond.js may not work in IE8 if CSS or jQuery are loaded from CDN
+Use Respond.js (see 1st Url)<br>
+Note that respond.js may not work in IE8 if CSS or jQuery are loaded from CDN (see 2nd Url)
 ```
 <!--[if lte IE 8]>
   <script src="respond.min.js"></script>
