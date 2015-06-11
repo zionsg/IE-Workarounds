@@ -62,6 +62,17 @@ In general, issues are sorted in alphabetical order, with non-working CSS classe
 
 
 <br /><hr />
+**Issue:** Images with `.img-responsive` stretch beyond original size.<br />
+**Version:** IE10 and below<br />
+**Cause:** Handling of `width` and `max-width`.<br />
+**Workaround:** <br />
+Add the following in your custom CSS.
+```
+.img-responsive { width: auto; }
+```
+
+
+<br /><hr />
 **Issue:** `.span*` do not work.<br />
 **Version:** IE7 and below<br />
 **Url:** https://github.com/twitter/bootstrap/issues/4329<br />
